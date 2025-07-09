@@ -6,6 +6,7 @@ int main() {
     int age;
     float weight;
     float height;
+    const float conversion = 0.01;
     std::cout << "Enter your name: ";
     std::cin >> name;
     std::cout << "Enter your age: ";
@@ -14,7 +15,6 @@ int main() {
     std::cin >> weight;
     std::cout << "Enter your height (cm): ";
     std::cin >> height;
-    const float conversion {height / 100};
     float bmi {weight / (conversion * conversion)};
     std::cout << "Name: " << name << "\t Age: " << age << "\t BMI: "<< bmi << std::endl;
     return 0;
