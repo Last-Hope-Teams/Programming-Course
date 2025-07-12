@@ -15,7 +15,8 @@ int main() {
     std::cin >> weight;
     std::cout << "Enter your height (cm): ";
     std::cin >> height;
-    float bmi {weight / (height * conversion )};
+    float height_meter {height * conversion};
+    float bmi {weight / (height_meter * height_meter)};
     std::cout << "Name: " << name << "\t Age: " << age << "\t BMI: "<< bmi << std::endl;
     return 0;
-}     
+}    
